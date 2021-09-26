@@ -1,0 +1,17 @@
+mat-grid-tile {
+  background: lightblue;
+}
+.d1
+{
+  background-color: skyblue;
+  padding:7px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+}
+.st
+{
+  background-color: rgb(211, 211, 211);
+}

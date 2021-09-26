@@ -1,0 +1,41 @@
+.gd
+{
+  width: 650px;
+}
+a, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+  background-color: rgba(255, 255, 255, 0);
+
+}
+.ag
+{
+  color:blue;
+}
+
+li:hover{
+  color: black;
+background-color: rgba(255, 255, 255, 0);
+}
+.login
+{
+  border-radius: 10px;
+   border: 1px solid white;
+   background-color:rgba(255, 255, 255, 0);
+    padding: 9px;
+    margin-top: 4px;
+}
+.signup
+{
+  background-color: yellow;
+  color: black;
+  border-radius: 10px;
+   padding: 9px;
+   margin-top: 4px;
+}
+.gf
+{
+  background-color: yellow;
+color: black;
+
+}

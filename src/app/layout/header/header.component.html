@@ -1,0 +1,99 @@
+<nav class="navbar bg-primary">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Book Sharing</a>
+    </div>
+    <ul  class="nav navbar-nav">
+      <li class="active"><a href="#"  (click)="changebut('home')">Home</a></li>
+      <li><a routerLink="dashboard" (click)="changebut('dashboard')">BookStore</a></li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    </ul>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="input-group gd">
+        <input type="text" class="form-control  " placeholder="Find your next favourite book" name="search">
+        <div class="input-group-btn">
+          <button class="btn gf" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    <ul *ngIf="!flag" class="nav navbar-nav navbar-right">
+      <li><a class="login"  data-toggle="modal" data-target="#login">&nbsp;&nbsp;<b>Log in</b>&nbsp;&nbsp;</a></li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      <li><a class="signup" data-toggle="modal" data-target="#signup">&nbsp;&nbsp;<b>Sign up</b>&nbsp;&nbsp;</a></li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    </ul>
+    <ul  *ngIf="flag" class="nav navbar-nav navbar-right">
+      <li><a class="login"  data-toggle="modal" data-target="#login">&nbsp;&nbsp;<b>Upload</b>&nbsp;&nbsp;</a></li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      <li><a class="signup" data-toggle="modal" data-target="#signup">&nbsp;&nbsp;<b>Cart</b>&nbsp;&nbsp;</a></li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    </ul>
+  </div>
+</nav>
+
+
+<!--  Login-->
+
+
+
+<div class="modal fade" id="login" tabindex="-10" role="dialog" aria-labelledby="login" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+            <h4 class="modal-title" id="login">LOG IN</h4>
+
+        <button align="right" type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <label>EMAIL OR USERNAME</label>
+          <input type="text" class="form-control " placeholder="Email Or Username" name="username">
+          <div class="input-group-btn">
+            <button class="btn" style="background-color: rgba(255, 255, 255, 0);" >
+            </button>
+          </div>
+        </div>
+        <br>
+        <div class="input-group">
+          <label>PASSWORD</label>
+          <input type="password" class="form-control " placeholder="Password" name="password">
+          <div class="input-group-btn">
+            <button class="btn" style="background-color: rgba(255, 255, 255, 0);" >
+            </button>
+          </div>
+        </div>
+        <a class="ag">Forgot Password? </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">SignUp</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

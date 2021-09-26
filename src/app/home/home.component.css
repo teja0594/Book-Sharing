@@ -1,0 +1,28 @@
+
+.bg
+{
+  background-image: url("../../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1550px , 100px;
+  background-attachment: scroll;
+}
+.tet
+{
+
+  padding: 100px;
+}
+.vl {
+  border-left: 4px solid white;
+  height: 500px;
+  position:absolute;
+  left: 50%;
+  margin-left: -259px;
+  top: 283px;
+}
+hr {
+  border:  solid white;
+  margin-top: 10px;
+  width: 100%;
+  margin-left: 401px;
+}
